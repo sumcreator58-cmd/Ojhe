@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Portfolio</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0f0f14;
+  overflow-x:hidden;
+  font-family:sans-serif;
+  color:white;
+}
+
+/* HERO (compact) */
+.hero{
+  text-align:center;
+  padding:60px 20px 30px;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+/* SLIDER WRAPPER */
+.slider-wrapper{
+  padding:20px 0;
+}
+
+/* ROW */
+.slider{
+  overflow:hidden;
+  white-space:nowrap;
+  margin:15px 0; /* small vertical gap */
+}
+
+.slide-track{
+  display:inline-flex;
+  animation:scroll 25s linear infinite;
+}
+
+.reverse{
+  animation-direction:reverse;
+}
+
+.slide{
+  width:260px;
+  height:160px;
+  margin:0 10px; /* small horizontal gap */
+  border-radius:16px;
+  object-fit:cover;
+  transition:0.4s ease;
+}
+
+.slide:hover{
+  transform:scale(1.08);
+}
+
+/* Animation */
+@keyframes scroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+/* Pause on hover */
+.slider:hover .slide-track{
+  animation-play-state:paused;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>Professional Thumbnail Designer</h1>
+</section>
+
+<div class="slider-wrapper">
+
+  <!-- Row 1 -->
+  <div class="slider">
+    <div class="slide-track">
+      <img src="https://picsum.photos/400/300?1" class="slide">
+      <img src="https://picsum.photos/400/300?2" class="slide">
+      <img src="https://picsum.photos/400/300?3" class="slide">
+      <img src="https://picsum.photos/400/300?4" class="slide">
+      <img src="https://picsum.photos/400/300?5" class="slide">
+
+      <!-- duplicate -->
+      <img src="https://picsum.photos/400/300?1" class="slide">
+      <img src="https://picsum.photos/400/300?2" class="slide">
+      <img src="https://picsum.photos/400/300?3" class="slide">
+      <img src="https://picsum.photos/400/300?4" class="slide">
+      <img src="https://picsum.photos/400/300?5" class="slide">
+    </div>
+  </div>
+
+  <!-- Row 2 (reverse direction) -->
+  <div class="slider">
+    <div class="slide-track reverse">
+      <img src="https://picsum.photos/400/300?6" class="slide">
+      <img src="https://picsum.photos/400/300?7" class="slide">
+      <img src="https://picsum.photos/400/300?8" class="slide">
+      <img src="https://picsum.photos/400/300?9" class="slide">
+      <img src="https://picsum.photos/400/300?10" class="slide">
+
+      <!-- duplicate -->
+      <img src="https://picsum.photos/400/300?6" class="slide">
+      <img src="https://picsum.photos/400/300?7" class="slide">
+      <img src="https://picsum.photos/400/300?8" class="slide">
+      <img src="https://picsum.photos/400/300?9" class="slide">
+      <img src="https://picsum.photos/400/300?10" class="slide">
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="slider">
+    <div class="slide-track">
+      <img src="https://picsum.photos/400/300?11" class="slide">
+      <img src="https://picsum.photos/400/300?12" class="slide">
+      <img src="https://picsum.photos/400/300?13" class="slide">
+      <img src="https://picsum.photos/400/300?14" class="slide">
+      <img src="https://picsum.photos/400/300?15" class="slide">
+
+      <!-- duplicate -->
+      <img src="https://picsum.photos/400/300?11" class="slide">
+      <img src="https://picsum.photos/400/300?12" class="slide">
+      <img src="https://picsum.photos/400/300?13" class="slide">
+      <img src="https://picsum.photos/400/300?14" class="slide">
+      <img src="https://picsum.photos/400/300?15" class="slide">
+    </div>
+  </div>
+
+</div>
+
+</body>
+        </html>
